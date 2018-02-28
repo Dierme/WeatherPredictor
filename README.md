@@ -9,12 +9,13 @@ and use it to predict weather. This can in be interesting in several ways:
 3. Understanding and finding features can improve predictions
 
 Project structure:
+'''
 get_weather.py should be run by daemon to collect data from api
 main.py tries to predict data based on current entries in DB
 ApiClient.py - implementation of client, used for communication with api
 Database.py - implementation of DB class, based on pony.orm
 models/ - model representation of tables in DB
-
+'''
 Setup:
 Create new virtual environment
 Run: pip install -r req.txt
