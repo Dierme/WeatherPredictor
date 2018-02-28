@@ -1,0 +1,3 @@
+requests
+pony
+scikit-learn[alldeps]
