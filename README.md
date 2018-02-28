@@ -17,5 +17,5 @@ Project structure:
 
 Setup:
 1. Create new virtual environment
-2.Run: pip install -r req.txt
-3.Set up daemon to run get_weathet.py
+2. Run: pip install -r req.txt
+3. Set up daemon to run get_weathet.py
