@@ -1,6 +1,7 @@
 from pony.orm import *
 from Database import DataBase
 from models.City import City
+import utils
 
 db = DataBase.get_database()
 
@@ -15,6 +16,7 @@ class Weather(db.Entity):
     humidity = Required(float)
     visibility = Required(float)
     wind_speed = Required(float)
+    month = Required(int)
     dt = Required(int)              # unix
 
     # ---- Query
@@ -46,6 +48,7 @@ class Weather(db.Entity):
                         humidity=humidity,
                         visibility=visibility,
                         wind_speed=wind_speed,
+                        month=utils.get_month_by_dt(dt),
                         dt=dt)
         return entry
 
