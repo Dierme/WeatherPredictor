@@ -16,5 +16,5 @@ class DataBase:
 
     @staticmethod
     def generate():
-        DataBase.instance.bind(provider='sqlite', filename='database.sqlite', create_db=True)
+        DataBase.instance.bind(provider='sqlite', filename='weather.sqlite', create_db=True)
         DataBase.instance.generate_mapping(create_tables=True)
